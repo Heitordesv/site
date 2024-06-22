@@ -1,6 +1,5 @@
-     <?php include('includes/session.php'); ?>
-
-   <meta charset="utf-8">
+<?php include('includes/session.php'); ?>
+<meta charset="utf-8">
   <title><?=$texto['titulo_site_landing'];?></title>
   <meta name="robots" content="index, fallow" />
   <link rel="canonical" href="<?=$site;?>/cadastro">
