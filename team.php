@@ -1,6 +1,5 @@
 
-     <?php include('includes/session.php'); ?>
-
+  <?php  include('includes/session.php'); ?>
   <meta charset="utf-8">
   <title><?=$texto['titulo_site_landing'];?></title>
   <meta name="robots" content="index, fallow" />
@@ -8,41 +7,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">    
   <meta name="keywords" content="<?=$texto['keywords_landing'];?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="google-site-verification" content="Jv1zg5fNc0dHUehYWyp88j-Uj-Fyg2Nh_BpjfzdqztI" />
+  <meta name="google-site-verification" content="Jv1zg5fNc0dHUehYWyp88j-Uj-Fyg2Nh_BpjfzdqztI" />
   <meta name="author" content="<?=$texto['autor_site_landing'];?>">
   <meta property="og:site_name" content="<?=$texto['nome_site_landing'];?>"/>
   <meta property="og:url" content="<?=$site;?>"/>
   <meta name="description" content="<?=$texto['descricao_site_landing'];?>" />
   <meta property="og:description" content="<?=$texto['descricao_site_landing'];?>" />
-   <meta name="google-site-verification" content="ap4V0chEWZkki1mLtgjgvzO7QtkXvO9-bX714wpNTgs" />
-    <link rel="shortcut icon" href="/img/logo help agenda.png" type="image/x-icon">
-
-
-  <!-- Fonts -->
+  <meta name="google-site-verification" content="ap4V0chEWZkki1mLtgjgvzO7QtkXvO9-bX714wpNTgs" />
+  <link rel="shortcut icon" href="/img/logo help agenda.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-
+  <link href="css/whats.css" rel="stylesheet">
+  <link href="css/formulario.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <style>
+    #toast-container > .toast-success {
+      background-color: #51a351;
+    }
+    #toast-container > .toast-error {
+      background-color: #bd362f;
+    }
+    /* Estilos para o modal */
+    .hide {
+      display: none;
+    }
+   
+  </style><style>element.style {
+}
+.header .logo img {
+    max-height: 62px;
+    margin-right: 8px;
+}
+img, svg {
+    vertical-align: middle;
+}
+</style>
 </head>
-
 <body class="team-page">
-
      <?php include('includes/header.php'); ?>
-
   <main class="main">
-
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade" style="background-image: url(assets/img/team-page-title-bg.jpg);">
       <div class="container">
         <h1>Team</h1>
@@ -53,11 +65,8 @@
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
-
+    </div>
    <section id="team" class="team section">
-
-  <!-- Título da Seção -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Nosso Time</h2>
     <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -128,9 +137,11 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="js/formuario.js"></script>
 
 </body>
 
