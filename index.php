@@ -1,37 +1,61 @@
-<?php include('includes/session.php'); ?>
-<meta charset="utf-8">
+     <?php include('includes/session.php'); ?>
+
+  <meta charset="utf-8">
   <title><?=$texto['titulo_site_landing'];?></title>
   <meta name="robots" content="index, fallow" />
   <link rel="canonical" href="<?=$site;?>/cadastro">
   <meta name="viewport" content="width=device-width, initial-scale=1">    
   <meta name="keywords" content="<?=$texto['keywords_landing'];?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="google-site-verification" content="Jv1zg5fNc0dHUehYWyp88j-Uj-Fyg2Nh_BpjfzdqztI" />
+  <meta name="google-site-verification" content="Jv1zg5fNc0dHUehYWyp88j-Uj-Fyg2Nh_BpjfzdqztI" />
   <meta name="author" content="<?=$texto['autor_site_landing'];?>">
   <meta property="og:site_name" content="<?=$texto['nome_site_landing'];?>"/>
   <meta property="og:url" content="<?=$site;?>"/>
   <meta name="description" content="<?=$texto['descricao_site_landing'];?>" />
   <meta property="og:description" content="<?=$texto['descricao_site_landing'];?>" />
-   <meta name="google-site-verification" content="ap4V0chEWZkki1mLtgjgvzO7QtkXvO9-bX714wpNTgs" />
-    <link rel="shortcut icon" href="/img/logo help agenda.png" type="image/x-icon">
+  <meta name="google-site-verification" content="ap4V0chEWZkki1mLtgjgvzO7QtkXvO9-bX714wpNTgs" />
+  <link rel="shortcut icon" href="/img/logo help agenda.png" type="image/x-icon">
 
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/whats.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="css/whats.css" rel="stylesheet">
+  <link href="css/formulario.css" rel="stylesheet">
 
- 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <style>
+    #toast-container > .toast-success {
+      background-color: #51a351;
+    }
+    #toast-container > .toast-error {
+      background-color: #bd362f;
+    }
+    .hide {
+      display: none;
+    }
+   
+  </style><style>element.style {
+}
+.header .logo img {
+    max-height: 62px;
+    margin-right: 8px;
+}
+img, svg {
+    vertical-align: middle;
+}</style>
+
 </head>
 
 <body class="index-page">
@@ -43,7 +67,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/Design sem nome (16).png" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -54,7 +78,7 @@
               </p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#about" class="btn-get-started" style="background-color: black; color: var(--default-color);">Fale conosco</a>
+              <a href="#about" class="btn-get-started" style="background-color: black; color: var(--default-color);" onclick="openWhatsAppModal()">Fale conosco</a>
               <a href="https://www.youtube.com/watch?v=9Bj4TPNrHPk" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Apresentação</span></a>
             </div>
           </div>
@@ -76,7 +100,7 @@
     <div class="row g-0">
 
       <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/why-us-bg.jpg" alt="">
+        <img src="assets/img/post (4).png" alt="">
       </div>
 
       <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
@@ -259,7 +283,7 @@
         </div>
         <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
           <div class="phone-wrap">
-            <img src="assets/img/Design sem nome (12).png" alt="Imagem" class="img-fluid">
+            <img src="assets/img/Design sem nome (14).png" alt="Imagem" class="img-fluid">
           </div>
         </div>
       </div>
@@ -294,7 +318,18 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+ 
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -302,10 +337,11 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="js/formuario.js"></script>
 </body>
 
 </html>
