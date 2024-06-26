@@ -12,7 +12,7 @@
   <meta name="google-site-verification" content="Jv1zg5fNc0dHUehYWyp88j-Uj-Fyg2Nh_BpjfzdqztI" />
   <meta name="author" content="<?= $texto['autor_site_landing']; ?>">
   <meta property="og:site_name" content="<?= $texto['nome_site_landing']; ?>"/>
-  <meta property="og:url" content="<?= $site; ?>"/>
+  <meta property="og:url" content="<?= $site; ?>/site"/>
   <meta name="description" content="<?= $texto['descricao_site_landing']; ?>" />
   <meta property="og:description" content="<?= $texto['descricao_site_landing']; ?>" />
   <meta name="google-site-verification" content="ap4V0chEWZkki1mLtgjgvzO7QtkXvO9-bX714wpNTgs" />
