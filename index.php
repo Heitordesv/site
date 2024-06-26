@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title><?= $texto['titulo_site_landing']; ?></title>
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="<?= $site; ?>/cadastro">
+  <link rel="canonical" href="<?= $site; ?>/site">
   <meta name="viewport" content="width=device-width, initial-scale=1">    
   <meta name="keywords" content="<?= $texto['keywords_landing']; ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
